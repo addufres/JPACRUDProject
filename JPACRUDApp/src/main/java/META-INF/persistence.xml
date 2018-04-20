@@ -8,13 +8,13 @@
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider
     </provider>
     	
-		<class>com.skilldistillery.jpacrudapp.entities.PUTYOURCLASS</class>
+		<class>com.skilldistillery.jpacrudapp.entities.Car</class>
 		<properties>
 			<property name="javax.persistence.jdbc.url"
-				value="jdbc:mysql://localhost:3306/PUTYOURDATABASENAME" />
-			<property name="javax.persistence.jdbc.user" value="CHANGEMETOAUSERNAME" />
+				value="jdbc:mysql://localhost:3306/carsdb" />
+			<property name="javax.persistence.jdbc.user" value="carsuser" />
 			<property name="javax.persistence.jdbc.password"
-				value="CHANGEMETOAPASSWORD" />
+				value="resusrac" />
 			<property name="javax.persistence.jdbc.driver"
 				value="com.mysql.jdbc.Driver" />
 
