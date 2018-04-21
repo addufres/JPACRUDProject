@@ -1,1 +1,73 @@
 @charset "UTF-8";
+body {
+	padding: 10px 10px 10px 10px;
+	background-color: lightgray;
+	text-align: center;
+	background-image: url('../images/background.jpeg');
+	background-size: contain;
+	background-position: static;
+}
+
+div {
+	padding: 10px 10px 10px 10px;
+}
+
+ul>li {
+	list-style: none;
+}
+
+.image_center {
+	position: relative;
+	padding-left: 10%;
+	padding-right: 10%;
+	width: 100%;
+	height: auto;
+}
+.display_box {
+	background-color: lightgray;
+	border: 3px black solid;
+	margin-bottom: 15px;
+}
+
+.tiny_box {
+	margin-left: 35%;
+	margin-right: 35%;
+	margin-bottom: 0px;
+	z-index: 10;
+}
+
+img {
+	width: 85%;
+	height: 60%;
+}
+
+.carDisplay {
+	background-color: lightgray;
+	border: 3px black solid;
+	margin-top: 3px;
+}
+
+.centered {
+	text-align: center;
+}
+
+.cursive {
+	font-family: cursive;
+}
+
+.image_center {
+	display: block;
+	padding-left: auto;
+	padding-right: auto;
+	width: auto;
+}
+.top_corner {
+	left: .5px;
+	top: .5px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	color: darkblue;
+}
+.dark_text {
+	color: darkblue;
+}

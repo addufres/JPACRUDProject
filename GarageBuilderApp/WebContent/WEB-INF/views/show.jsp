@@ -13,6 +13,9 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+
+<!-- 
 <style type="text/css">
 body {
 	padding: 10px 10px 10px 10px;
@@ -33,8 +36,15 @@ ul>li {
 	padding-left: auto;
 	padding-right: auto;
 	width: auto;
+	height: auto;
+}
+.display_box {
+	background-color: lightgray;
+	border: 3px black solid;
+	margin-top: 3px;
 }
 </style>
+-->
 <c:choose>
 <c:when test="${empty car }">
 <title>No Car Found</title>
@@ -45,7 +55,7 @@ ul>li {
 </c:choose>
 </head>
 <body>
-	<div>
+	<div class="display_box">
 	<c:choose>
 	<c:when test="${empty car }">
 		<h1>NO CAR FOUND TRY LOWER ID NUMBER</h1>
@@ -92,8 +102,10 @@ ul>li {
 		
 		</c:otherwise>
 	</c:choose>	
-		<a href="index.do">Head back to the main garage =></a>
 	</div>
+	
+	<div class="display_box">
+		<a href="index.do">Head back to the main garage =></a>
 	<!-- search form -->
 	<form action="getCar.do" method="GET" class="centered">
 		<p>Search for another vehicle
@@ -114,6 +126,8 @@ ul>li {
 		<input type="hidden" value="${car.id }" name="cid"/>
 		<input type="submit" value="Delete Car" /></p>
 	</form>
+	
+	</div>
 	<!-- end delete form -->
 	<div class="row">
 		<div class="col-12"></div>

@@ -14,16 +14,9 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	crossorigin="anonymous">
-
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 <style type="text/css">
-body {
-	padding: 10px 10px 10px 10px;
-	background-color: gray;
-}
 
-div {
-	padding: 10px 10px 10px 10px;
-}
 
 img {
 	width: 85%;
@@ -50,10 +43,23 @@ img {
 	padding-right: auto;
 	width: auto;
 }
+.top_corner {
+	left: .5px;
+	top: .5px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	color: darkblue;
+}
+.dark_text {
+	color: darkblue;
+}
 </style>
 <title>Home</title>
 </head>
 <body>
+<div class="display_box">
+<a class="top_corner" href="https://github.com/addufres/JPACRUDProject/blob/master/README.md" target="_blank">Github repo for this application</a>
+
 	<div class="row">
 		<div class="col"></div>
 		<div class="col-8">
@@ -82,16 +88,19 @@ img {
 		<div class="col"></div>
 		<!--  end form section -->
 	</div>
+	</div>
 	<br>
 	<!-- list of all films -->
-	<h3 class="centered">List of All Cars</h3>
+	<div class="tiny_box display_box"><h3 class="centered">List of All Cars</h3></div>
 	<div>
 		<c:forEach var="car" items="${cars}">
 			<div class="carDisplay centered">
 				<h5>
+				<a class="dark_text" href="getCar.do?cid=${car.id}">
 					<p>${car.year }</p>
 					<p>${car.make }</p>
 					<p>${car.model }</p>
+				</a>	
 				</h5>
 
 				<p>${car.hp }hp</p>

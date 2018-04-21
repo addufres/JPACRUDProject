@@ -13,6 +13,8 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+<!--  	
 <style type="text/css">
 body {
 	padding: 10px 10px 10px 10px;
@@ -34,11 +36,11 @@ ul>li {
 	padding-right: auto;
 	width: auto;
 }
-</style>
+</style>-->
 <title>${car.year } ${car.model } ${car.make }</title>
 </head>
 <body>
-	<div>
+	<div class="display_box">
 	<h3>SUCCESS! HERE ARE THE RESULTS!</h3>
 		<h5>
 			<strong>${car.year } </strong><a href="${car.wiki }" target="_blank"><strong>${car.make }
@@ -80,9 +82,12 @@ ul>li {
 		</div>
 		<a href="index.do">Head back to the main garage =></a>
 	</div>
-	<form action="deleteCar.do" method="GET" class="centered">
+	<div class="display_box">
+	<form action="deleteCar.do" method="POST" class="centered">
+		<input type="hidden" name="cid" value="${car.id }">
 		<input type="submit" value="Delete this Car" />
 	</form>
+	</div>
 	<div class="row">
 		<div class="col-12"></div>
 	</div>
