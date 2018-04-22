@@ -14,7 +14,7 @@
 				value="jdbc:mysql://localhost:3306/carsdb" />
 			<property name="javax.persistence.jdbc.user" value="carsuser" />
 			<property name="javax.persistence.jdbc.password"
-				value="resusrac" />
+				value="carsuser" />
 			<property name="javax.persistence.jdbc.driver"
 				value="com.mysql.jdbc.Driver" />
 
