@@ -62,7 +62,7 @@ dependencies {
   compile "org.hibernate:hibernate-core:$hibernateVersion"
   compile "org.hibernate:hibernate-c3p0:$hibernateVersion"
   
-  compile group: 'org.springframework', name: 'spring-context', version:"$springVersion"
+   compile group: 'org.springframework', name: 'spring-context', version:"$springVersion"
    compile group: 'org.springframework', name: 'spring-tx', version: "$springVersion"
    compile group: 'org.springframework', name: 'spring-orm', version:"$springVersion"
   
